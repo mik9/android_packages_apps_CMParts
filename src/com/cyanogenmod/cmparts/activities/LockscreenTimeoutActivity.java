@@ -50,7 +50,7 @@ public class LockscreenTimeoutActivity extends PreferenceActivity implements
         mScreenLockTimeoutDelayPref = (ListPreference) prefSet
                 .findPreference(LOCKSCREEN_TIMEOUT_DELAY_PREF);
         int timeoutDelay = Settings.System.getInt(getContentResolver(),
-                Settings.System.SCREEN_LOCK_TIMEOUT_DELAY, 5000);
+                Settings.System.SCREEN_LOCK_TIMEOUT_DELAY, 0);
         mScreenLockTimeoutDelayPref.setValue(String.valueOf(timeoutDelay));
         mScreenLockTimeoutDelayPref.setOnPreferenceChangeListener(this);
 

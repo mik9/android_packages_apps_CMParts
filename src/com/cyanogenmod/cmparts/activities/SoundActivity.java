@@ -34,6 +34,7 @@ import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.widget.TimePicker;
 import java.util.Calendar;
+import android.util.Log;
 
 public class SoundActivity extends PreferenceActivity implements OnPreferenceChangeListener {
 
@@ -50,6 +51,8 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
     private static final String NOTIFICATIONS_LIMITVOL = "notif-limitvol";
 
     private static final String VOLUME_CONTROL_SILENT = "vol-ctrl-silent";
+
+    private static final String SWAP_VOLUME_KEYS = "swap-vol-keys";
 
     private static final String RINGS_SPEAKER = "ring-speaker";
 
@@ -129,6 +132,13 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
         lp.setValue(String.valueOf(SystemProperties.getInt(getKey(ALARMS_LIMITVOL), 1)));
         lp.setSummary(lp.getEntry());
         lp.setOnPreferenceChangeListener(this);
+
+        lp = (ListPreference) prefSet.findPreference(SWAP_VOLUME_KEYS);
+        lp.setValue(String.valueOf(Settings.System.getInt(getContentResolver(),
+                Settings.System.SWAP_VOLUME_KEYS_ORIENTATION,
+                getResources().getInteger(com.android.internal.R.integer.swap_volume_keys_orientation))));
+        lp.setSummary(lp.getEntry());
+        lp.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -139,6 +149,10 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
         } else if (key.equals(VOLUME_CONTROL_SILENT)) {
             Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_CONTROL_SILENT,
                     getBoolean(newValue) ? 1 : 0);
+        } else if (key.equals(SWAP_VOLUME_KEYS)) {
+            Settings.System.putInt(getContentResolver(), Settings.System.SWAP_VOLUME_KEYS_ORIENTATION,
+                    getInt(newValue));
+            mHandler.sendMessage(mHandler.obtainMessage(0, key));
         } else if (key.equals(NOTIFICATIONS_SPEAKER) || key.equals(RINGS_SPEAKER)
                 || key.equals(ALARMS_SPEAKER)) {
             SystemProperties.set(getKey(key), getBoolean(newValue) ? "1" : "0");
