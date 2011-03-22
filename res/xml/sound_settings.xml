@@ -17,6 +17,13 @@
 			android:summary="@string/sound_volume_control_silent_summary"
 			android:persistent="false" />
 
+        <ListPreference android:key="swap-vol-keys"
+			android:title="@string/sound_swap_volume_keys_title"
+			android:dialogTitle="@string/sound_swap_volume_keys_dialog"
+			android:entries="@array/swap_volume_keys_orientation_list_entries"
+			android:entryValues="@array/swap_volume_keys_orientation_list_values"
+			android:persistent="false" />
+
 		<PreferenceScreen android:key="sound_category_quiet_hours"
 			android:title="@string/sound_category_quiet_hours_title">
 			<intent android:action="android.intent.action.MAIN"
