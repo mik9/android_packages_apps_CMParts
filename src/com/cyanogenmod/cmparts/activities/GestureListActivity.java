@@ -39,6 +39,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Button;
 
 import java.io.File;
 import java.util.Collections;
@@ -192,7 +193,14 @@ public class GestureListActivity extends ListActivity {
             mThumbnailInset = (int) (8 * scale + 0.5f);
             mThumbnailSize = (int) (64 * scale + 0.5f);
 
-            findViewById(R.id.addButton).setEnabled(false);
+            Button addButton = (Button) findViewById(R.id.addButton);
+            addButton.setEnabled(false);
+            addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addGesture(v);
+            }
+            });
 
             mAdapter.setNotifyOnChange(false);
             mAdapter.clear();

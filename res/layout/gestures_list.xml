@@ -48,7 +48,6 @@
 
         <Button
             android:id="@+id/addButton"
-            android:onClick="addGesture"
 
             android:layout_width="0dip"
             android:layout_height="wrap_content"

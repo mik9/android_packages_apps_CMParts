@@ -63,6 +63,19 @@ public class GestureCreateActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gesture_create);
         mDoneButton = findViewById(R.id.done);
+        mDoneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addGesture(v);
+            }
+        });
+        Button cancelButton = (Button) findViewById(R.id.cancel);
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cancelGesture(v);
+            }
+        });
         mShortcutButton = (Button) findViewById(R.id.shortcut_picker);
         GestureOverlayView overlay = (GestureOverlayView) findViewById(R.id.gestures_overlay);
         overlay.addOnGestureListener(new GesturesProcessor());
