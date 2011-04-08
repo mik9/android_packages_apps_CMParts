@@ -77,6 +77,30 @@ public class GestureCreateActivity extends Activity {
             }
         });
         mShortcutButton = (Button) findViewById(R.id.shortcut_picker);
+        mShortcutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pickShortcut(v);
+            }
+        });
+        findViewById(R.id.unlock_pick).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pickUnlockOnly(v);
+            }
+        });
+        findViewById(R.id.sound_pick).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pickSoundOnly(v);
+            }
+        });
+        findViewById(R.id.flashlight_pick).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pickFlashlight(v);
+            }
+        });
         GestureOverlayView overlay = (GestureOverlayView) findViewById(R.id.gestures_overlay);
         overlay.addOnGestureListener(new GesturesProcessor());
         // Remove flashlight button if Torch app isn't on the phone

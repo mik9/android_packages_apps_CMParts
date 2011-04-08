@@ -30,8 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/gestures_shortcut_picker_button_label"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:onClick="pickShortcut" />
+        android:textAppearance="?android:attr/textAppearanceSmall" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,20 +39,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/gestures_unlock_only"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:onClick="pickUnlockOnly" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
         <Button android:id="@+id/sound_pick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/gestures_toggle_sound"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:onClick="pickSoundOnly" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
         <Button android:id="@+id/flashlight_pick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/gestures_flashlight"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:onClick="pickFlashlight" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
     </LinearLayout>
     <android.gesture.GestureOverlayView
         android:id="@+id/gestures_overlay"

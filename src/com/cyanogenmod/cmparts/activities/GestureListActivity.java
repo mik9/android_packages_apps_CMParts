@@ -196,10 +196,10 @@ public class GestureListActivity extends ListActivity {
             Button addButton = (Button) findViewById(R.id.addButton);
             addButton.setEnabled(false);
             addButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                addGesture(v);
-            }
+                @Override
+                public void onClick(View v) {
+                    addGesture(v);
+                }
             });
 
             mAdapter.setNotifyOnChange(false);
