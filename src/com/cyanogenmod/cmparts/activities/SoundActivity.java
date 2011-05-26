@@ -34,7 +34,7 @@ import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.widget.TimePicker;
 import java.util.Calendar;
-import android.util.Log;
+import android.media.AudioManager;
 
 public class SoundActivity extends PreferenceActivity implements OnPreferenceChangeListener {
 
@@ -159,6 +159,7 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
         } else if (key.equals(SWAP_VOLUME_KEYS)) {
             Settings.System.putInt(getContentResolver(), Settings.System.SWAP_VOLUME_KEYS_ORIENTATION,
                     getInt(newValue));
+            ((AudioManager)getSystemService(AUDIO_SERVICE)).reloadAudioSettings();
             mHandler.sendMessage(mHandler.obtainMessage(0, key));
         } else if (key.equals(VIBRATE_IN_CALL)) {
             Settings.System.putInt(getContentResolver(), Settings.System.VIBRATE_IN_CALL,
