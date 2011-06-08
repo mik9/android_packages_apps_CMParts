@@ -16,7 +16,11 @@
 
 package com.cyanogenmod.cmparts.activities;
 
-import com.cyanogenmod.cmparts.R;
+import java.io.File;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 
 import android.app.ListActivity;
 import android.content.Context;
@@ -41,11 +45,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Button;
 
-import java.io.File;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
+import com.cyanogenmod.cmparts.R;
 
 public class GestureListActivity extends ListActivity {
     private static final int STATUS_SUCCESS = 0;
@@ -294,8 +294,12 @@ public class GestureListActivity extends ListActivity {
             final TextView label = (TextView) convertView;
 
             label.setTag(gesture);
-            String[] payload = gesture.name.split("___", 2);
+            String[] payload = gesture.name.split("___", 3);
             String name = payload[0];
+            // Indicate that it is an application and it is going to be run in the background
+            if (payload.length > 2) {
+            	name += " *";
+            }
             if (name != null) {
                 label.setText(name);
             }
