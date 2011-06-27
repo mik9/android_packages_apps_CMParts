@@ -266,7 +266,7 @@
     <string name="pref_ring_mode_title">소리 버튼 설정</string>
     <string name="pref_ring_mode_summary">소리 버튼의 작용을 선택합니다.</string>
     <string name="pref_flash_mode_title">플래시 버튼</string>
-    <string name="pref_flash_mode_summary">High / Death Ray(Evo) 선택</string>
+    <string name="pref_flash_mode_summary">High / Death Ray 선택</string>
 
 
     <!-- Performance : Lock home memory -->
@@ -399,8 +399,6 @@
     <string name="changelog_unknown">알 수 없음</string>
     <string name="changelog_version">버전</string>
 
-    <string name="pref_rotate_180_title">180도 회전</string>
-    <string name="pref_rotate_180_summary">화면 자동 회전이 활성화 되었을 때 180도 회전을 하도록 허용합니다.</string>
 
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">초과 스크롤</string>

@@ -41,8 +41,6 @@
   <string name="pref_electron_beam_animation_off">אנימציה בכיבוי מסך</string>
 
     <!-- User interface : 180 degree rotation -->
-  <string name="pref_rotate_180_title">סיבוב 180 מעלות</string>
-  <string name="pref_rotate_180_summary">אפשר סיבוב נוסף של 180 מעלות כאשר סיבוב אוטומטי פעיל</string>
 
     <!-- User interface : LED Notifications -->
   <string name="trackball_title">נורית התראות</string>
@@ -290,7 +288,7 @@
   <string name="pref_ring_mode_title">מצבי קול</string>
   <string name="pref_ring_mode_summary">בחר כיצד לחצן השמע משנה מצבים</string>
   <string name="pref_flash_mode_title">מצב פלאש</string>
-  <string name="pref_flash_mode_summary">Choose High / Death Ray(Evo)</string>
+  <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
 
     <!-- Backlight -->
   <string name="backlight_title">עוצמת תאורת אוטומטית</string>

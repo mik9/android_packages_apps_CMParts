@@ -41,8 +41,6 @@
     <string name="pref_electron_beam_animation_off">Animación al apagar pantalla</string>
 
     <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Girar 180 grados</string>
-    <string name="pref_rotate_180_summary">Permitir rotación adicional de 180 grados cuando se activa auto-rotación</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Ajustes de la barra de estado</string>
@@ -341,7 +339,7 @@
     <string name="pref_ring_mode_title">Modos de sonido</string>
     <string name="pref_ring_mode_summary">Elegir como cambia el sonido con el botón</string>
     <string name="pref_flash_mode_title">Modo de flash</string>
-    <string name="pref_flash_mode_summary">Elegir Alto / Rayo Mortal(Evo)</string>
+    <string name="pref_flash_mode_summary">Elegir Alto / Rayo Mortal</string>
 
 
     <!-- Performance : Lock home memory -->

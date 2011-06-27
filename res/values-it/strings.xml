@@ -85,9 +85,12 @@
     <string name="tablet_soft_buttons_search_title">Cerca</string>
     <string name="tablet_soft_buttons_quick_na_title">Notifiche veloci</string>
 
-    <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Rotazione 180 gradi</string>
-    <string name="pref_rotate_180_summary">Permette una rotazione di 180 gradi se la rotazione automatica è attiva</string>
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">Rotazione accelerometro</string>
+    <string name="pref_rotation_0_title">0 gradi</string>
+    <string name="pref_rotation_90_title">90 gradi</string>
+    <string name="pref_rotation_180_title">180 gradi</string>
+    <string name="pref_rotation_270_title">270 gradi</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Modifiche barra di stato</string>
@@ -101,6 +104,7 @@
     <string name="ui_status_bar_compact_carrier_summary">Utilizza un layout alternativo per l\'area delle notifiche rimpicciolendo l\'etichetta operatore.</string>
     <string name="ui_status_bar_toggle_brightness">Controllo luminosità</string>
     <string name="ui_status_bar_toggle_brightness_summary">Permette di regolare la luminosità scorrendo il dito lungo la barra di stato.</string>
+    <string name="ui_status_bar_toggle_info">La luminosità automatica è attiva</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notifiche LED</string>
@@ -242,6 +246,7 @@
     <string name="button_settings_title">Impostazioni tasti</string>
     <string name="long_press_home_title">Long-press tasto home</string>
     <string name="long_press_home_summary">Numero di applicazioni recenti, etc.</string>
+
     <string name="input_search_key_title">Comportamento tasto cerca</string>
     <string name="input_search_key_summary">Assegna un\'azione personalizzata al tasto cerca e alla pressione prolungata del tasto cerca</string>
     <string name="pref_input_custom_search_app_toggle_title">App tasto cerca</string>
@@ -249,6 +254,13 @@
     <string name="pref_input_custom_search_app_activity_title">Applicazione personalizzata</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Long-press tasto cerca</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Avvia un\'applicazione personalizzata alla pressione prolungata del tasto cerca</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Long-press tasto menu</string>
+    <string name="long_press_menu_summary">Impostazioni personalizzate per la pressione prolungata del tasto menu</string>
+    <string name="pref_user_defined_long_press_menu_title">Seleziona applicazione</string>
+    <string name="pref_long_press_menu_title">Seleziona azione</string>
+    <string name="pref_long_press_menu_summary">Seleziona l\'azione da associare alla pressione prolungata del tasto menu</string>
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">Mostra titolo Recenti</string>
@@ -423,7 +435,7 @@
     <string name="pref_ring_mode_title">Mod. Audio</string>
     <string name="pref_ring_mode_summary">Scegli le modalità del tasto per l\'audio</string>
     <string name="pref_flash_mode_title">Mod. Torcia</string>
-    <string name="pref_flash_mode_summary">Scegli tra Normale e Forte / Death Ray(Evo)</string>
+    <string name="pref_flash_mode_summary">Scegli tra Normale e Forte / Death Ray</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Retroilluminazione Automatica</string>
