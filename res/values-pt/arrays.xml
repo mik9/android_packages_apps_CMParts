@@ -16,8 +16,6 @@
  -->
 
 <resources>
-
-
     <string-array name="entries_install_location">
         <item>Automático</item>
         <item>Memória interna</item>
@@ -30,14 +28,20 @@
         <item>Nenhum (Padrão)</item>
     </string-array>
 
-
-
     <string-array name="pref_trackball_blink_rate_entries">
+        <item>Usar configuração da aplicação</item>
         <item>2 (Rápido)</item>
         <item>3</item>
         <item>4 (Médio)</item>
         <item>5</item>
         <item>6 (Lento)</item>
+    </string-array>
+
+    <string-array name="pref_trackball_force_mode_entries">
+        <item>Usar configurações da aplicação</item>
+        <item>Forçar LED a ficar desligado</item>
+        <item>Forçar LED a acender em eventos</item>
+        <item>Forçar LED a acender</item>
     </string-array>
 
     <string-array name="pref_lockscreen_delay_entries">
@@ -138,6 +142,7 @@
         <item>Rotativo</item>
         <item>Rotativo Remodelado</item>
         <item>Lente</item>
+        <item>Anel</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">
@@ -191,6 +196,7 @@
         <item>Aba Deslizante</item>
         <item>Giratório</item>
         <item>Giratório renovado</item>
+        <item>Anel</item>
     </string-array>
 
     <string-array name="entries_long_press_menu">
@@ -205,5 +211,20 @@
         <item>Cor de preenchimento</item>
         <item>Imagem personalizada</item>
         <item>Papel de parede padrão</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_entries">
+        <item>3 horas</item>
+        <item>6 horas</item>
+        <item>12 horas</item>
+        <item>1 dia</item>
+        <item>3 dias</item>
+        <item>1 semana</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_widget_layout_entries">
+        <item>Padrão</item>
+        <item>Oculto</item>
+        <item>Centralizado</item>
     </string-array>
 </resources>

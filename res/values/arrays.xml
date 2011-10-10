@@ -23,7 +23,15 @@
         <item>15</item>
     </string-array>
   
-    <string-array name="entries_heapsize" translatable="false">
+    <string-array name="entries_heapsize">
+        <item>12m</item>
+        <item>16m</item>
+        <item>24m</item>
+        <item>32m</item>
+        <item>48m</item>
+    </string-array>
+
+    <string-array name="values_heapsize" translatable="false">
         <item>12m</item>
         <item>16m</item>
         <item>24m</item>
@@ -134,6 +142,7 @@
     </string-array>
 
     <string-array name="entries_trackball_colors" translatable="false">
+        <item>@string/trackball_color_entry_use_app</item>
         <item>@string/trackball_color_entry_green</item>
         <item>@string/trackball_color_entry_white</item>
         <item>@string/trackball_color_entry_red</item>
@@ -145,10 +154,10 @@
         <item>@string/trackball_color_entry_orange</item>
         <item>@string/trackball_color_entry_light_blue</item>
         <item>@string/trackball_color_entry_random</item>
-        <item>@string/trackball_color_entry_none</item>
     </string-array>
 
     <string-array name="pref_trackball_colors_values" translatable="false">
+        <item>default</item>
         <item>green</item>
         <item>white</item>
         <item>red</item>
@@ -160,36 +169,22 @@
         <item>#ffa500</item>
         <item>#add8e6</item>
         <item>random</item>
-        <item>none</item>
     </string-array>
 
     <string-array name="entries_dual_led_colors" translatable="false">
+        <item>@string/trackball_color_entry_use_app</item>
         <item>@string/trackball_color_entry_green</item>
         <item>@string/trackball_color_entry_amber</item>
-        <item>@string/trackball_color_entry_none</item>
     </string-array>
 
     <string-array name="values_dual_led_colors" translatable="false">
+        <item>default</item>
         <item>green</item>
         <item>red</item>
-        <item>none</item>
-    </string-array>
-
-    <string-array name="entries_mixable_dual_led_colors" translatable="false">
-        <item>@string/trackball_color_entry_green</item>
-        <item>@string/trackball_color_entry_red</item>
-        <item>@string/trackball_color_entry_amber</item>
-        <item>@string/trackball_color_entry_none</item>
-    </string-array>
-
-    <string-array name="values_mixable_dual_led_colors" translatable="false">
-        <item>green</item>
-        <item>red</item>
-        <item>yellow</item>
-        <item>none</item>
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">
+        <item>Use application setting</item>
         <item>2 (Fast)</item>
         <item>3</item>
         <item>4 (Medium)</item>
@@ -198,13 +193,28 @@
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_values" translatable="false">
+        <item>default</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
         <item>5</item>
         <item>6</item>
     </string-array>
-    
+
+    <string-array name="pref_trackball_force_mode_entries">
+        <item>Use application settings</item>
+        <item>Force LED off</item>
+        <item>Force LED on for events</item>
+        <item>Force LED on</item>
+    </string-array>
+
+    <string-array name="pref_trackball_force_mode_values" translatable="false">
+        <item>default</item>
+        <item>forceoff</item>
+        <item>forceeventon</item>
+        <item>forceon</item>
+    </string-array>
+
     <string-array name="pref_lockscreen_delay_entries">
         <item>Immediately</item>
         <item>1s</item>
@@ -505,6 +515,7 @@
         <item>Rotary</item>
         <item>Rotary revamped</item>
         <item>Lense</item>
+        <item>Ring</item>
     </string-array>
 
     <string-array name="pref_lockscreen_style_values" translatable="false">
@@ -512,18 +523,21 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+        <item>5</item>
     </string-array>
 
     <string-array name="pref_in_call_style_entries">
         <item>Sliding Tab</item>
         <item>Rotary</item>
         <item>Rotary revamped</item>
+        <item>Ring</item>
     </string-array>
 
     <string-array name="pref_in_call_style_values" translatable="false">
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
     </string-array>
 
     <string-array name="pref_lockscreen_background_entries">
@@ -533,6 +547,18 @@
     </string-array>
 
     <string-array name="pref_lockscreen_background_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_widget_layout_entries">
+        <item>Default</item>
+        <item>Hidden</item>
+        <item>Centered</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_widget_layout_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -550,6 +576,24 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_entries">
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+        <item>3 days</item>
+        <item>1 week</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_values" translatable="false">
+        <item>10800000</item>
+        <item>21600000</item>
+        <item>43200000</item>
+        <item>86400000</item>
+        <item>259200000</item>
+        <item>604800000</item>
     </string-array>
 
     <string-array name="pref_overscroll_effect_entries">

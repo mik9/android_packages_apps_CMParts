@@ -15,7 +15,6 @@
     <string name="input_settings_title_subhead">入力設定</string>
     <string name="input_settings_summary_head">入力の挙動, ボタン, 振動フィードバック</string>
     <string name="interface_settings_title_head">インタフェース</string>
-    <string name="interface_settings_title_subhead">インタフェース設定</string>
     <string name="interface_settings_summary_head">インタフェースの調整, オーバースクロール, 描画エフェクト</string>
     <string name="lockscreen_settings_title_head">ロックスクリーン</string>
     <string name="lockscreen_settings_title_subhead">ロックスクリーン設定</string>
@@ -36,7 +35,6 @@
 
     <!-- User interface -->
     <string name="ui_title">ユーザインタフェース</string>
-    <string name="ui_summary">ユーザインタフェース設定と調整</string>
 
     <string name="pref_electron_beam_animation_on">スクリーンオンアニメ</string>
     <string name="pref_electron_beam_animation_off">スクリーンオフアニメ</string>
@@ -105,14 +103,17 @@
     <string name="ui_status_bar_toggle_brightness">明るさのコントロール</string>
     <string name="ui_status_bar_toggle_brightness_summary">ステータスバーをスライディングすることで明るさの調整ができるようにする</string>
     <string name="ui_status_bar_toggle_info">自動明るさ調整は有効</string>
-
+    <string name="ui_status_bar_cm_signal_text_title">代替の電波強度表示</string>
+    <string name="ui_status_bar_cm_signal_text_summary">シグナルバーの代わりにdBm値を表示</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">シグナルバー</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">シグナルテキスト</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">dBm付きのシグナルテキスト</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED通知</string>
     <string name="trackball_summary">トラックボール/LEDでの通知の色や点滅を制御する</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">ピンチインリフロー</string>
     <string name="pref_pinch_reflow_summary">つまんでズームした後、改行を調整する</string>
 
@@ -128,7 +129,6 @@
     <string name="msg_color_picker">中央をタップして確定\n戻るボタンでキャンセル</string>
 
     <!-- User interface: Trackball notifcations -->
-    <string name="trackball_notifications_title">トラックーボールの通知色</string>
     <string name="dialog_color_trackball">色を選択</string>
     <string name="dialog_blink_trackball">点滅間隔を選択</string>
     <string name="color_trackball_flash_title">点灯色</string>
@@ -160,9 +160,7 @@
     <string name="trackball_category_add_summary">リストにカテゴリを追加する</string>
     <string name="trackball_category_remove_title">カテゴリを削除</string>
     <string name="trackball_category_remove_summary">リストからカテゴリを削除する</string>
-    <string name="trackball_remove_default_toast">デフォルトカテゴリを削除することはできません。</string>
     <string name="trackball_reset_all">すべてのカテゴリとカラーをリセット</string>
-    <string name="trackball_array_error">残念なことに配列エラーが発生しました。このパッケージは雑多カテゴリに追加されました。</string>
     <string name="trackball_color_notice_title">ノート</string>
     <string name="trackball_color_notice_summary">すべての色がすべてのデバイスで使用できるわけではありません。</string>
 
@@ -178,7 +176,6 @@
     <string name="trackball_color_entry_orange">オレンジ</string>
     <string name="trackball_color_entry_light_blue">ライトブルー</string>
     <string name="trackball_color_entry_random">ランダム</string>
-    <string name="trackball_color_entry_none">なし</string>
     <string name="trackball_color_entry_amber">アンバー</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -186,6 +183,8 @@
     <string name="notification_battery_warning">このオプションを有効にすることにより、1時間に約3%ほどのバッテリー消費が増加します。バッテリー消費が速くなったと感じたら、恐らくこのオプションが原因です。バッテリー消費が気になるのであれば、このオプションは有効にするべきではありません。</string>
 
     <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">ロック解除セキュリティ使用時はロックスクリーン無効</string>
+    <string name="pref_lockscreen_disable_on_security_summary">画面のロック解除セキュリティ(パスワード,PIN,パターン)を使用する場合はロックスクリーンを無効にする</string>
     <string name="pref_lockscreen_stylecfg_title">スタイルオプション</string>
     <string name="pref_lockscreen_stylecfg_summary">ロックスクリーンのスタイルとそれに対応する設定</string>
     <string name="pref_lockscreen_widgets_title">ウィジェットオプション</string>
@@ -199,9 +198,6 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">入力設定</string>
-    <string name="input_settings_summary">コントロールボタンの挙動など</string>
-    <string name="button_settings_title">ボタン設定</string>
-    <string name="lockscreen_settings_title">ロック画面設定</string>
     <string name="input_search_key_title">検索キーの挙動</string>
     <string name="input_search_key_summary">検索キーを押したときのアクションをカスタマイズする</string>
     <string name="pref_input_custom_search_app_toggle_title">検索キーのアプリ</string>
@@ -241,14 +237,21 @@
     <string name="pref_lockscreen_custom_app_toggle_title">カスタムアプリの起動</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">カスタムアプリを起動するための2つ目のスライダやロータリーの窪みを表示する</string>
     <string name="pref_lockscreen_custom_app_activity_title">カスタムアプリ</string>
+    <string name="pref_lockscreen_custom_background_title">背景を選択</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">背景を選択</string>
+    <string name="pref_lockscreen_custom_background_summary">ロックスクリーンの背景画像や色を選択する</string>
+    <string name="pref_lockscreen_custom_background_summary_color">現在 : 色</string>
+    <string name="pref_lockscreen_custom_background_summary_image">現在 : 画像</string>
+    <string name="pref_lockscreen_custom_background_summary_default">現在 : デフォルト</string>
+    <string name="pref_lockscreen_background_result_successful">背景は変更されました</string>
+    <string name="pref_lockscreen_background_result_not_successful">背景は変更されませんでした</string>
+
     <string name="pref_lockscreen_custom_icon_style_title">メッセージアイコンを使う</string>
     <string name="pref_lockscreen_custom_icon_style_summary">カスタムアプリの起動アイコンとしてCMアイコンの代わりににメッセージアイコンを使う</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">ドラッグダウンでアンロック</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">ロータリーホイールをドラッグダウンしてアンロック、右へドラッグしてカスタムアプリを起動する</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">矢印を表示しない</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">ロータリースタイルで回転方向のヒントの矢印を表示しない</string>
-    <string name="lockscreen_style_header">スタイル設定</string>
-    <string name="lockscreen_delay_header">遅延とタイムアウト</string>
     <string name="pref_lockscreen_style_title">ロックスクリーンスタイル</string>
     <string name="pref_in_call_style_title">呼び出しスタイル</string>
     <string name="pref_in_call_style_summary">電話の呼び出し時に表示される応答/拒否のウィジェットスタイルを選択する</string>
@@ -279,7 +282,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">パフォーマンス設定</string>
-    <string name="performance_settings_summary">デバイスパフォーマンスの調整</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Compcacheを使用する</string>
@@ -307,7 +309,12 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">アプリケーション設定</string>
-    <string name="application_settings_summary">インストール場所など、いくつかのアプリケーション設定</string>
+
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">内蔵ストレージを使用</string>
+    <string name="pref_switch_storage_summary_on">アプリケーションやメディアの格納に内蔵の拡張ストレージを使用する(再起動が必要)</string>
+    <string name="pref_switch_storage_summary_off">アプリケーションやメディアの格納に取り外し可能なカードを使用する(再起動が必要)</string>
+    <string name="pref_storage_switch_unavailable">このデバイスには内蔵の拡張ストレージはありません</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">アプリケーションの移動を許可</string>
@@ -375,6 +382,10 @@
     <!-- UI Settings : Render effect -->
     <string name="pref_render_effect_title">描画エフェクト</string>
     <string name="pref_render_effect_summary">スクリーンを描画する色を変更する(バッテリ維持の可能性がある)</string>
+
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">振動フィードバック</string>
+    <string name="expanded_haptic_feedback_summary">振動フィードバックを有効/無効にする</string>
 
     <string name="widget_name">RenderFXウィジェット</string>
     <string name="renderfx_temp">RenderFX</string>
@@ -469,12 +480,23 @@
     <string name="pref_lock_mms_title">メッセージアプリをメモリに維持</string>
     <string name="pref_lock_mms_summary">メモリが少ないときにメッセージが消失するのを防ぐ</string>
 
-    <string name="ui_lockscreen_title">スクリーンロックの設定</string>
-    <string name="pref_lockscreen_delay_title">ディレイ</string>
-    <string name="pref_lockscreen_timeout_lock_delay">スクリーンタイムアウトからのディレイ</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">スクリーンオフしてからのディレイ</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">スクリーンがタイムアウトしてからどのくらいの時間でロックするか</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">スクリーンをオフにしてからどのらいの時間でロックするか</string>
+    <string name="pref_lockscreen_delay_title">遅延</string>
+    <string name="pref_lockscreen_security_title">セキュリティロック</string>
+    <string name="pref_lockscreen_security_delay_note_title">ノート</string>
+    <string name="pref_lockscreen_security_delay_note_summary">画面のロック解除セキュリティを無しに設定するとセキュリティロックの遅延のみ有効になります</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">画面タイムアウト時の遅延</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">画面オフ時の遅延</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">画面がタイムアウトしてからセキュリティロックするまでの時間</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">画面をオフにしてからセキュリティロックするまでの時間</string>
+    <string name="pref_lockscreen_slide_title">スライドロック</string>
+    <string name="pref_lockscreen_slide_delay_note_title">ノート</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">有効にした場合、通常のスライドロックはセキュリティロックの遅延がスライドロックの遅延よりも長いときのみ表示されます</string>
+    <string name="pref_lockscreen_slide_delay_title">スライドロックの遅延</string>
+    <string name="pref_lockscreen_slide_delay_summary">画面ロックの遅延をセキュリティロックの遅延とは別に設定する</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">画面タイムアウト時の遅延</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">画面オフ時の遅延</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">画面がタイムアウトしてからスライドロックするまでの時間</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">画面をオフにしてからスライドロックするまでの時間</string>
 
     <string name="dialog_clear_flash">点滅をクリア</string>
 
@@ -519,8 +541,6 @@
     <string name="ll_num_levels">レベル数をセット</string>
 
     <!-- Sound -->
-    <string name="sound_title">サウンド設定</string>
-    <string name="sound_summary">サウンドとオーディオフォーカスの設定</string>
     <string name="sound_notifications_focus_title">通知音フォーカス</string>
     <string name="sound_notifications_focus_summary">通知音再生時に、オーディオフォーカスリクエストに対応しているアプリの音量を下げる</string>
     <string name="sound_volume_control_silent_title">消音状態</string>
@@ -578,16 +598,12 @@
     <string name="pref_lockscreen_gestures_builder_title">ジェスチャーを作成</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">感度</string>
     <string name="pref_lockscreen_gestures_color_title">色</string>
-    <string name="label_create_gesture">ジェスチャーを作成</string>
     <string name="gestures_button_add">ジェスチャーを追加</string>
     <string name="gestures_button_discard">破棄</string>
     <string name="gestures_button_done">完了</string>
     <string name="gestures_error_missing_shortcut">ジェスチャーにアクションを割り当てる必要があります！</string>
-    <string name="gestures_save_success">%s にジェスチャーを保存しました</string>
-    <string name="gestures_cancel_action">キャンセル</string>
     <string name="gestures_loading">ジェスチャーをロード中...</string>
     <string name="gestures_empty">ジェスチャーなし</string>
-    <string name="gestures_activity">ジェスチャー</string>
     <string name="gestures_delete">削除</string>
     <string name="gestures_delete_success">ジェスチャーを削除しました</string>
     <string name="gestures_error_loading">ジェスチャーファイルの操作に問題が発生しました</string>
@@ -625,8 +641,6 @@
     <string name="title_phone_goggles_start">Phone Goggles開始時刻</string>
     <string name="title_phone_goggles_end">Phone Goggles終了時刻</string>
     <string name="title_phone_goggles_confirmation_enabled">確認を求める</string>
-    <string name="title_phone_goggles_phone_enabled">電話</string>
-    <string name="title_phone_goggles_sms_enabled">メッセージ</string>
     <string name="title_phone_goggles_maths_level">数学のレベル</string>
     <string name="title_phone_goggles_work_filtered">仕事</string>
     <string name="title_phone_goggles_mobile_filtered">モバイル</string>

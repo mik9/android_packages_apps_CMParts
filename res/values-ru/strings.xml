@@ -15,7 +15,6 @@
     <string name="input_settings_title_subhead">Настройки ввода</string>
     <string name="input_settings_summary_head">Настройки ввода, кнопок, тактильного отклика</string>
     <string name="interface_settings_title_head">Интерфейс</string>
-    <string name="interface_settings_title_subhead">Настройки интерфейса</string>
     <string name="interface_settings_summary_head">Настройки интерфейса, перепрокрутки, эффектов экрана</string>
     <string name="lockscreen_settings_title_head">Экран блокировки</string>
     <string name="lockscreen_settings_title_subhead">Настройки экрана блокировки</string>
@@ -36,7 +35,6 @@
 
     <!-- User interface -->
     <string name="ui_title">Интерфейс</string>
-    <string name="ui_summary">Настройки пользовательского интерфейса</string>
 
     <string name="pref_electron_beam_animation_on">Анимация включения экрана</string>
     <string name="pref_electron_beam_animation_off">Анимация выключения экрана</string>
@@ -105,13 +103,19 @@
     <string name="ui_status_bar_toggle_brightness">Управление яркостью в строке состояния</string>
     <string name="ui_status_bar_toggle_brightness_summary">Позволяет изменять яркость проводя по строке состояния</string>
     <string name="ui_status_bar_toggle_info">Включена автоматическая яркость</string>
+    <string name="ui_status_bar_cm_signal_text_title">Альтернативное отображение сигнала</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Показывать значение дБм вместо графического индикатора</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Графический индикатор</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Уровень сигнала</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Уровень сигнала в дБм</string>
+    <string name="ui_status_bar_headset_title">Показывать значок наушников</string>
+    <string name="ui_status_bar_headset_summary">Значок появляется при подключении наушников</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Уведомления светодиодом трекбола</string>
     <string name="trackball_summary">Настройка цветов и ритма уведомлений через светодиод трекбола</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">Перерисовка после увеличения</string>
     <string name="pref_pinch_reflow_summary">Перерисовывать веб-контент сразу после увеличения</string>
 
@@ -123,19 +127,29 @@
     <string name="pref_overscroll_weight_summary">Выбор размера прокручиваемых объектов</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Настройка блокировки экрана</string>
     <string name="pref_lockscreen_delay_title">Задержка</string>
-    <string name="pref_lockscreen_timeout_lock_delay">Задержка при автовыключении экрана</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">Задержка при выключении экрана</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">Как быстро срабатывает блокировка после автовыключения экрана</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">Как быстро срабатывает блокировка после выключения экрана</string>
+    <string name="pref_lockscreen_security_title">Блокировка с ограничением доступа</string>
+    <string name="pref_lockscreen_security_delay_note_title">Примечание</string>
+    <string name="pref_lockscreen_security_delay_note_summary">Если безопасность экрана блокировки не установлена, будут использоваться задержки безопасной блокировки</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Задержка при автовыключении экрана</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Задержка при выключении экрана</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Как быстро срабатывает блокировка после автовыключения экрана</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Как быстро срабатывает блокировка после выключения экрана</string>
+    <string name="pref_lockscreen_slide_title">Блокировка ползунками</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Примечание</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">При включенном состоянии блокировка ползунками без защиты появляется в случае, если задержка безопасной блокировки будет больше чем задержка блокировки ползунками</string>
+    <string name="pref_lockscreen_slide_delay_title">Включить задержку блокировки ползунков</string>
+    <string name="pref_lockscreen_slide_delay_summary">Показывать экран блокировки ползунков с выставленной задержкой до показа безопасной блокировки</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Задержка при автовыключении экрана</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Задержка при выключении экрана</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Как быстро срабатывает блокировка после автовыключения экрана</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Как быстро срабатывает блокировка после выключения экрана</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Выберите цвет</string>
     <string name="msg_color_picker">Нажмите в центр для подтверждения.\nНажмите назад для отмены</string>
 
     <!-- User interface: LED notifications -->
-    <string name="trackball_notifications_title">Цвета уведомлений трекбола</string>
     <string name="dialog_color_trackball">Выберите цвет</string>
     <string name="dialog_blink_trackball">Выберите частоту мигания</string>
     <string name="color_trackball_flash_title">Цвет мигания</string>
@@ -170,13 +184,27 @@
     <string name="trackball_category_add_summary">Добавить категорию в список</string>
     <string name="trackball_category_remove_title">Удалить категорию</string>
     <string name="trackball_category_remove_summary">Удалить категорию из списка</string>
-    <string name="trackball_remove_default_toast">Невозможно удалить категорию, так как это категория по умолчанию.</string>
     <string name="trackball_reset_all">Сброс всех цветов и категорий.</string>
-    <string name="trackball_array_error">К сожалению, произошла ошибка. Этот пакет был принудительно помещен в категорию Разное.</string>
     <string name="trackball_color_notice_title">ПРИМЕЧАНИЕ:</string>
     <string name="trackball_color_notice_summary">На некоторых устройствах будут отображаться не все цвета</string>
+    <string name="trackball_category_unconfigured">Ненастроенные</string>
+    <string name="trackball_category_misc">Смешанные</string>
+    <string name="trackball_app_save_title">Сохранить</string>
+    <string name="trackball_app_save_summary">Сохранить настройки для этого приложения</string>
+    <string name="trackball_app_reset_title">Сброс</string>
+    <string name="trackball_app_reset_summary">Удалить пользовательские настройки для этого приложения</string>
+
+    <string name="trackball_force_mode_title">Режим светодиода</string>
+    <string name="trackball_force_mode_dialog">Пожалуйста, выберите режим</string>
+    <string name="trackball_force_mode_summary">Настройте поведение светодиода</string>
+
+    <string name="trackball_app_mms">Сообщения</string>
+    <string name="trackball_app_twitter">Твиттер</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Пропущенный вызов</string>
 
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">Исп. настройки приложений</string>
     <string name="trackball_color_entry_green">Зелёный</string>
     <string name="trackball_color_entry_white">Белый</string>
     <string name="trackball_color_entry_red">Красный</string>
@@ -188,7 +216,6 @@
     <string name="trackball_color_entry_orange">Оранжевый</string>
     <string name="trackball_color_entry_light_blue">Светло-синий</string>
     <string name="trackball_color_entry_random">Случайно</string>
-    <string name="trackball_color_entry_none">Нет</string>
     <string name="trackball_color_entry_amber">Жёлтый</string>
 
     <!--Trackball Settings : Warning dialog -->
@@ -210,9 +237,10 @@
     <string name="pref_lockscreen_timeout_summary">Настройки времени задержки блокировки экрана</string>
 
     <!-- Lockscreen Settings -->
-    <string name="lockscreen_settings_title">Настройки экрана блокировки</string>
     <string name="pref_lockscreen_always_battery_title">Состояние батареи</string>
     <string name="pref_lockscreen_always_battery_summary">Всегда показывать состояние батареи на экране блокировки</string>
+    <string name="pref_lockscreen_widgets_layout_title">Положение виджета</string>
+    <string name="pref_lockscreen_widgets_layout_summary">Расположение часов, даты, оператора</string>
     <string name="pref_lockscreen_music_controls_title">Управление плеером</string>
     <string name="pref_lockscreen_music_controls_summary">Показывать на экране блокировки элементы управления плеером</string>
     <string name="pref_lockscreen_now_playing_title">Название песни</string>
@@ -234,23 +262,33 @@
     <string name="pref_lockscreen_quick_unlock_control_title">Быстрая разблокировка</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Не требуется нажимать ОК после ввода пароля или PIN. Стирание засчитывается как неудачная попытка</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Запуск приложения пользователя</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Добавить второй ползунок (для стиля Ползунок) или приложение пользователя (для стиля Вращение)</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Добавить второй ползунок (для стиля Ползунок), приложение пользователя (для стиля Вращение) или третье кольцо (для стиля Кольца)</string>
     <string name="pref_lockscreen_custom_app_activity_title">Выбрать приложение</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Выберите ярлык для установки</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Выберите ярлык для сброса</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Отменить</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Добавить</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Удалить</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">Не установлено</string>
     <string name="pref_lockscreen_custom_background_title">Выбрать фон</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Выбрать фон</string>
     <string name="pref_lockscreen_custom_background_summary">Выберите изображение или цвет в качестве фона экрана блокировки</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Выбран цвет</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Выбрано изображение</string>
+    <string name="pref_lockscreen_custom_background_summary_default">По умолчанию</string>
+    <string name="pref_lockscreen_background_result_successful">Фон изменён</string>
+    <string name="pref_lockscreen_background_result_not_successful">Фон не изменён</string>
     <string name="pref_lockscreen_custom_icon_style_title">Иконка приложения</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Использовать иконку приложения вместо иконки CM для приложения пользователя</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Сдвинуть вниз для разблокировки</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Сдвиг вниз для разблокировки. Сдвиг вправо для запуска пользовательского приложения</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Скрыть стрелки</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Скрывает стрелки-подсказки (для стиля Вращение)</string>
-    <string name="lockscreen_style_header">Настройки стиля</string>
-    <string name="lockscreen_delay_header">Задержка и таймаут</string>
     <string name="pref_lockscreen_style_title">Стиль экрана блокировки</string>
     <string name="pref_lockscreen_style_summary">Выбор стиля экрана блокировки</string>
     <string name="pref_in_call_style_title">Стиль входящего звонка</string>
     <string name="pref_in_call_style_summary">Выбор стиля виджета принять/отклонить входящего звонка</string>
+    <string name="lockscreen_music_title">Управление музыкой</string>
     <string name="pref_volbtn_music_controls_title">Управление музыкой кнопками громкости</string>
     <string name="pref_volbtn_music_controls_summary">Листать треки долгим нажатие на кнопку громкости при выключенном экране</string>
     <string name="pref_cambtn_music_controls_title">Управление музыкой кнопкой камеры</string>
@@ -258,12 +296,20 @@
     <string name="lockscreen_widgets_note_title">Примечание</string>
     <string name="lockscreen_widgets_note_summary">Использование минималистичного стиля \"Линза\" скрывает все виджеты, кроме управления плеером. Тем не менее, настройки ниже продолжают быть доступны для легкого переключения на другие стили</string>
 
+     <string name="lockscreen_calendar_title">Календарь</string>
+     <string name="pref_lockscreen_calendar_alarm_title">Показывать следующее событие календаря</string>
+     <string name="pref_lockscreen_calendar_alarm_summary">Показывать время и название следующего события в календаре</string>
+     <string name="pref_lockscreen_calendars_title">События календарей</string>
+     <string name="pref_lockscreen_calendars_summary">Отобразить события из этих календарей</string>
+     <string name="pref_lockscreen_calendar_reminders_only_title">Только напоминания</string>
+     <string name="pref_lockscreen_calendar_reminders_only_summary">Отобразить события которые имеют напоминания</string>
+     <string name="pref_lockscreen_calendar_lookahead_title">Просмотр будущих событий</string>
+     <string name="pref_lockscreen_calendar_lookahead_summary">На сколько дней (часов) вперёд будут отображаться события в календарях</string>
+
     <!-- Input Settings -->
     <string name="input_settings_title">Ввод</string>
-    <string name="input_settings_summary">Настройка поведения кнопок</string>
     <string name="haptic_title">Настройки отклика</string>
     <string name="haptic_summary">Настройка условий и силы тактильного отклика</string>
-    <string name="button_settings_title">Настройки кнопок</string>
     <string name="long_press_home_title">Долгое нажатие на Home</string>
     <string name="long_press_home_summary">Количество последних приложений и т.д.</string>
     <string name="input_search_key_title">Настройки кнопки поиск</string>
@@ -273,6 +319,8 @@
     <string name="pref_input_custom_search_app_activity_title">Выбрать своё приложение</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Долгое нажатие</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Запуск своего приложения по долгому нажатию на кнопку поиск</string>
+
+    <string name="pref_backtrack_summary">Включение/Выключение BackTrack Minipad</string>
 
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">Долгое нажатие на Меню</string>
@@ -338,7 +386,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Производительность</string>
-    <string name="performance_settings_summary">Настройки производительности устройства</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Включить Compcache</string>
@@ -374,17 +421,24 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Приложения</string>
-    <string name="application_settings_summary">Изменение различных настроек приложений, такие как место установки</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Разрешить перемещение</string>
     <string name="pref_move_all_apps_summary">Разрешить перемещение любых приложений на внешнюю память</string>
+
+
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">Внутренняя память</string>
+    <string name="pref_switch_storage_summary_on">Использование расширенной внутренней памяти для приложений и медиа (требуется перезагрузка)</string>
+    <string name="pref_switch_storage_summary_off">Использование съёмного носителя для приложений и медиа (требуется перезагрузка)</string>
+    <string name="pref_storage_switch_unavailable">У этого устройства нет расширенной внутренней памяти</string>
 
     <!-- Application Settings : Install Location -->
     <string name="pref_install_location_title">Место установки</string>
     <string name="pref_install_location_summary">Укажите, куда будут устанавливаться новые приложения</string>
 
     <string name="general_title">Основные</string>
+    <string name="camera_title">Камера</string>
     <string name="buttons_title">Кнопки</string>
 
     <!-- UI Settings : Power off prompt -->
@@ -525,8 +579,6 @@
     <string name="ll_num_levels">Установите количество уровней</string>
 
     <!-- Sound -->
-    <string name="sound_title">Звук</string>
-    <string name="sound_summary">Настройки звуков и фокуса на уведомление</string>
     <string name="sound_notifications_focus_title">Фокус на уведомление</string>
     <string name="sound_notifications_focus_summary">Приложения будут приглушать звук, когда проигрывается уведомление</string>
     <string name="sound_volume_control_silent_title">Состояние тишины</string>
@@ -534,6 +586,11 @@
     <string name="sound_vibrate_in_call_title">Вибрация во время разговора</string>
     <string name="sound_vibrate_in_call_summary_off">Не вибрировать при уведомлениях во время разговора</string>
     <string name="sound_vibrate_in_call_summary_on">Вибрировать при уведомлениях</string>
+    <string name="sound_camera_shutter_disable_title">Отключить звук камеры</string>
+    <string name="sound_camera_shutter_disable_summary_on">Звук камеры выключен</string>
+    <string name="sound_camera_shutter_disable_summary_off">Звук камеры включен</string>
+    <string name="sound_camera_shutter_disable_warning_title">ВНИМАНИЕ: это может быть незаконным!</string>
+    <string name="sound_camera_shutter_disable_warning">Отключение звука камеры является незаконным в некоторых местах. Вы уверены, что хотите отключить звук?</string>
     <string name="sound_to_speaker_title">Всегда проигрывать через динамик</string>
     <string name="sound_notifications_title">Уведомления</string>
     <string name="sound_rings_title">Звонки</string>
@@ -575,6 +632,8 @@
     <string name="user_defined_key1">Горячая клавиша 1</string>
     <string name="user_defined_key2">Горячая клавиша 2</string>
     <string name="user_defined_key3">Горячая клавиша 3</string>
+    <string name="user_defined_envelope_key">Клавиша конверт</string>
+    <string name="user_defined_explorer_key">Клавиша навигации</string>
     <string name="user_defined_not_set">Ничего не установлено</string>
 
     <!--  Lockscreen gesture strings -->
@@ -583,16 +642,12 @@
     <string name="pref_lockscreen_gestures_builder_title">Созданные жесты</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Чувствительность</string>
     <string name="pref_lockscreen_gestures_color_title">Цвет жеста</string>
-    <string name="label_create_gesture">Создать жест</string>
     <string name="gestures_button_add">Добавить жест</string>
     <string name="gestures_button_discard">Отменить</string>
     <string name="gestures_button_done">Готово</string>
     <string name="gestures_error_missing_shortcut">Вы должны выбрать действия для этого жеста!</string>
-    <string name="gestures_save_success">Жест сохранен в %s</string>
-    <string name="gestures_cancel_action">Отмена</string>
     <string name="gestures_loading">Загрузка жестов...</string>
     <string name="gestures_empty">Нет жестов</string>
-    <string name="gestures_activity">Жесты</string>
     <string name="gestures_delete">Удалить</string>
     <string name="gestures_delete_success">Жест удален</string>
     <string name="gestures_error_loading">Проблема с жестом для выполнения операции.</string>
@@ -630,8 +685,6 @@
     <string name="title_phone_goggles_start">Старт пьяного режима</string>
     <string name="title_phone_goggles_end">Конец пьяного режима</string>
     <string name="title_phone_goggles_confirmation_enabled">Запрос на подтверждение</string>
-    <string name="title_phone_goggles_phone_enabled">Телефон</string>
-    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Математические задачи</string>
     <string name="title_phone_goggles_work_filtered">Рабочий</string>
     <string name="title_phone_goggles_mobile_filtered">Мобильный</string>
