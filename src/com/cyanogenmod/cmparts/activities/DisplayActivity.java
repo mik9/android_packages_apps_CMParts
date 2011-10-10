@@ -82,14 +82,15 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
         /* Electron Beam control */
         boolean animateScreenLights = getResources().getBoolean(
                 com.android.internal.R.bool.config_animateScreenLights);
-        mElectronBeamAnimationOn = (CheckBoxPreference)prefSet.findPreference(ELECTRON_BEAM_ANIMATION_ON);
-        mElectronBeamAnimationOn.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.ELECTRON_BEAM_ANIMATION_ON,
-                getResources().getBoolean(com.android.internal.R.bool.config_enableScreenOnAnimation) ? 1 : 0) == 1);
         mElectronBeamAnimationOff = (CheckBoxPreference)prefSet.findPreference(ELECTRON_BEAM_ANIMATION_OFF);
         mElectronBeamAnimationOff.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.ELECTRON_BEAM_ANIMATION_OFF,
                 getResources().getBoolean(com.android.internal.R.bool.config_enableScreenOffAnimation) ? 1 : 0) == 1);
+        mElectronBeamAnimationOn = (CheckBoxPreference)prefSet.findPreference(ELECTRON_BEAM_ANIMATION_ON);
+        mElectronBeamAnimationOn.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.ELECTRON_BEAM_ANIMATION_ON,
+                getResources().getBoolean(com.android.internal.R.bool.config_enableScreenOnAnimation) ? 1 : 0) == 1);
+        mElectronBeamAnimationOn.setEnabled(mElectronBeamAnimationOff.isChecked());
 
         /* Hide Electron Beam controls if electron beam is disabled */
         if (animateScreenLights) {
@@ -126,6 +127,7 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
 
         if (preference == mElectronBeamAnimationOff) {
             value = mElectronBeamAnimationOff.isChecked();
+            mElectronBeamAnimationOn.setEnabled(value);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.ELECTRON_BEAM_ANIMATION_OFF, value ? 1 : 0);
         }
