@@ -95,8 +95,6 @@
     <string name="ui_status_bar_am_pm_summary">Προβολή AM/PM δίπλα στο ρολόι</string>
     <string name="ui_status_bar_clock_title">Εμφάνιση ρολογιού</string>
     <string name="ui_status_bar_clock_summary">Το ρολόι της μπάρας κατάστασης θα είναι κρυμμένο, αν το απενεργοποιήσετε</string>
-    <string name="ui_status_bar_cm_battery_title">Ποσοστό μπαταρίας</string>
-    <string name="ui_status_bar_cm_battery_summary">Προβολή ποσοστού μπαταρίας και ενός μικρού εικονιδίου. Απενεργοποιήστε το αν κάποιο θέμα το κάνει να μη φαίνεται σωστά</string>
     <string name="ui_status_bar_compact_carrier_title">Συμπαγής ετικέτα παρόχου</string>
     <string name="ui_status_bar_compact_carrier_summary">Χρήση εναλλακτικού χώρου ειδοποιήσεων με μικρή ετικέτα παρόχου</string>
     <string name="ui_status_bar_toggle_brightness">Έλεγχος φωτεινότητας από τη μπάρα κατάστασης</string>
@@ -223,6 +221,12 @@
     <string name="trackball_color_entry_random">Τυχαίο</string>
     <string name="trackball_color_entry_amber">Amber</string>
 
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_application">Χρήση ρύθμισης εφαρμογής</string>
+    <string name="trackball_force_mode_off">Εξαναγκ. ανενεργό LED</string>
+    <string name="trackball_force_mode_events">Εξαναγκ. ενεργό LED για συμβάντα</string>
+    <string name="trackball_force_mode_on">Εξαναγκ. ενεργό LED</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ΠΡΟΣΟΧΗ: Ίσως καταναλώσει την μπαταρία</string>
     <string name="notification_battery_warning">Αυτή η επιλογή αποδεδειγμένα μειώνει τη μπαταρία κατα ~3% ανά ώρα. Αν παρατηρήσετε αύξηση της κατανάλωσης κατά τον παλμό του φωτισμόυ του trackball τότε αυτή η επιλογή είναι η αιτία. Μην την ενεργοποιήσετε αν δε θέλετε να επιβαρυνθείτε την κατανάλωση αυτή.</string>
@@ -312,10 +316,8 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Ρυθμίσεις εισόδου</string>
-    <string name="input_settings_summary">Έλεγχος συμπεριφοράς πλήκτρων</string>
     <string name="haptic_title">Tweaks απτικής ανάδρασης</string>
     <string name="haptic_summary">Ρυθμίστε πότε και πόσο δυνατά θα χρησιμοποιείται η απτική ανάδραση</string>
-    <string name="button_settings_title">Ρυθμίσεις πλήκτρων</string>
     <string name="long_press_home_title">Κρατημένο πάτημα πλήκτρου home</string>
     <string name="long_press_home_summary">Πλήθος πρόσφατων εφαρμογών, κτλ</string>
     <string name="input_search_key_title">Συμπεριφορά πλήκτρου αναζήτησης</string>
@@ -531,13 +533,10 @@
     <string name="pref_screentimeout_mode_summary">Επιλέξτε πως το πλήκτρο Screentimeout θα αλλάζει λειτουργίες</string>
     <string name="pref_ring_mode_title">Λειτουργίες ήχου</string>
     <string name="pref_ring_mode_summary">Επιλέξτε πως το πλήκτρο ήχου θα αλλάζει λειτουργίες</string>
-    <string name="cm_sound_mode_soundVib_vib">Ήχος+Δόνηση/Δόνηση</string>
-    <string name="cm_sound_mode_sound_vib">Ήχος/Δόνηση</string>
-    <string name="cm_sound_mode_sound_silent">Ήχος/Αθόρυβο</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Ήχος+Δόνηση/Δόνηση/Αθόρυβο</string>
-    <string name="cm_sound_mode_sound_vib_silent">Ήχος/Δόνηση/Αθόρυβο</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Ήχος+Δόνηση/Ήχος/Δόνηση/Αθόρυβο</string>
-    <string name="cm_sound_mode_vib_silent">Δόνηση/Αθόρυβο</string>
+    <string name="cm_sound_mode_silent">Αθόρυβο</string>
+    <string name="cm_sound_mode_vibrate">Δόνηση</string>
+    <string name="cm_sound_mode_sound">Ήχος</string>
+    <string name="cm_sound_mode_soundVibrate">Ήχος+Δόνηση</string>
     <string name="pref_flash_mode_title">Λειτουργία φακού</string>
     <string name="pref_flash_mode_summary">Επιλογή Υψηλού / Death Ray</string>
 
