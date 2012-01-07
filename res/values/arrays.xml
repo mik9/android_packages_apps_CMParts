@@ -17,7 +17,7 @@
 
 <resources>
 
-    <string-array name="entries_recent_apps_num">
+    <string-array name="entries_recent_apps_num" translatable="false">
         <item>8</item>
         <item>12</item>
         <item>15</item>
@@ -519,6 +519,9 @@
         <item>@string/gestures_unlock_only</item>
         <item>@string/gestures_toggle_sound</item>
         <item>@string/gestures_shortcut_or_activity</item>
+        <item>@string/gestures_next</item>
+        <item>@string/gestures_previous</item>
+        <item>@string/gestures_playpause</item>
         <item>@string/gestures_flashlight</item>
     </string-array>
 
